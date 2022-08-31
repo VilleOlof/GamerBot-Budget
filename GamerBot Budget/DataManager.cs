@@ -70,7 +70,7 @@ internal class DataManager
     }
     public static async Task SaveData()
     {
-        await File.WriteAllTextAsync($"{Program.FilePath}userData.json", JsonConvert.SerializeObject(UserData, Formatting.Indented));
+        await File.WriteAllTextAsync($"{Program.FilePath}Data/userData.json", JsonConvert.SerializeObject(UserData, Formatting.Indented));
     }
 
     public enum Operation
