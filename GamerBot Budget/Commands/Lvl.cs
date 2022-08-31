@@ -32,23 +32,4 @@ internal sealed class Lvl
 
         File.Delete(tempFilePath);
     }
-
-    private static async Task<Embed> GetLvlEmbed(SocketSlashCommand command, DataManager.User user)
-    {
-        string tempPath = $@"temp-{user.Name}.png";
-
-        var embed = new EmbedBuilder();
-        embed.WithColor(Color.Green);
-        embed.WithTitle($"**{command.User.Username}**");
-        embed.WithDescription(
-$@"**Level:** {user.Level}
-**Procent:** {Math.Round(user.levelXP / DataManager.LevelReq(user) * 100)}%
-");
-        Console.WriteLine("right before MakeFrame");
-        await FrameHandler.MakeFrame(user);
-        Console.WriteLine("Right after WithImageURL");
-        //File.Delete(tempPath);
-
-        return embed.Build();
-    }
 }
