@@ -1,0 +1,6 @@
+﻿{
+  "Name": "message",
+  "Description": "Specify The Message It Will Send When Ready.",
+  "Type": "3",
+  "IsRequired": "true"
+}

@@ -1,0 +1,6 @@
+{
+  "Name": "user",
+  "Description": "Specify User Other Than You.",
+  "Type": "6",
+  "IsRequired": "false"
+}

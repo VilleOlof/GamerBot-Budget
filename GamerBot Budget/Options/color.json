@@ -1,0 +1,6 @@
+﻿{
+  "Name": "color",
+  "Description": "Specify The Color Of The Background",
+  "Type": "3",
+  "IsRequired": "true"
+}

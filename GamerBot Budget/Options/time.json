@@ -1,0 +1,6 @@
+﻿{
+  "Name": "time",
+  "Description": "Specify The Amount Of Time The Bot Will Wait Until It Reminds You. (00:01 Is 1 Minute)",
+  "Type": "3",
+  "IsRequired": "true"
+}
